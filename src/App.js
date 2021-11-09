@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter as Router,Switch} from 'react-router-dom';
 import Pdf from '../src/assets/Ben-Meir_Resume.pdf';
 import { useState, useEffect } from 'react';
 
@@ -11,8 +9,8 @@ function App() {
   real estate investing, and blockchain applications.
   `
   const { height, width } = useWindowDimensions();
-  const marg = width > 700 ? '50%' : "80%";
-  console.log(marg)
+  const marg = width > 1000 ? '50%' : "80%";
+
   var divStyle = {
     width:marg,
     margin:"auto",
@@ -34,9 +32,81 @@ function App() {
     fontSize: 20,
     fontWeight: 'bold'
   };
-  var linkSyle = {
+  var subtitleStyle = {
+    fontWeight: 'bold',
     textDecoration: 'none'
   };
+
+
+  var sectioning = {
+    "Current Experience": [
+      {
+        "title": "Independent Real Estate Research",
+        "link": "https://jeremyben-meir.github.io/open-storefront-directory/",
+        "pos": "Lead Data Scientist"
+      }
+    ],
+    "Previous Experiences": [
+      {
+        "title": "Amazon",
+        "link": null,
+        "pos": "Software Development Engineer Intern"
+      },{
+        "title": "Survision",
+        "link": null,
+        "pos": "Application Developer"
+      },{
+        "title": "Cornell Robotic Personal Assistants Laboratory",
+        "link": null,
+        "pos": "Research Assistant"
+      }
+    ],
+    "Relevant Links": [
+      {
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/jeremy-ben-meir/",
+        "pos": null
+      },{
+        "title": "GitHub",
+        "link": "https://github.com/jeremyben-meir/",
+        "pos": null
+      },{
+        "title": "Resume",
+        "link": Pdf,
+        "pos": null
+      }
+    ],
+    "Contact": [
+      {
+        "title": "Email",
+        "link": null,
+        "pos": "jsb459 \"at\" cornell \"dot\" edu"
+      },
+      {
+        "title": "Phone",
+        "link": null,
+        "pos": "917 697 3521"
+      }
+    ],
+    
+
+  }
+
+  const role = (name, link, pos) => (
+    <div>
+    - <a style={subtitleStyle} href={link} target = "_blank">{name}</a> {pos != null ? ":" : ""} {pos}
+    </div>
+  )
+
+  const subsection = (header) => (
+    <div>
+    <p style={subheaderSyle}>{header}</p>
+    <div style={contentStyle}>
+      {Object.entries(sectioning[header]).map((link, index) => ( role(link[1]['title'],link[1]['link'],link[1]['pos']) ))}
+    </div>
+    </div>
+
+  )
 
   return (
     <div style={divStyle} className="App">
@@ -45,30 +115,7 @@ function App() {
 
       <a>{bio}</a>
 
-      <p style={subheaderSyle}>Current Experience</p>
-      <div style={contentStyle}>
-        <a style={linkSyle} href="https://jeremyben-meir.github.io/open-storefront-directory/" target = "_blank">- Open Storefront directory</a>
-      </div>
-
-      <p style={subheaderSyle}>Previous Experiences</p>
-      <div style={contentStyle}>
-        <a>- Software Development Engineer Intern at Amazon</a>
-        <a>- Application Developer at Survision</a>
-        <a>- Research Assistant at Cornell Robotic Personal Assistants Laboratory</a>
-      </div>
-
-      <p style={subheaderSyle}>Relevant Links</p>
-      <div style={contentStyle}>
-        <a style={linkSyle} href="https://www.linkedin.com/in/jeremy-ben-meir/" target = "_blank">- LinkedIn</a>
-        <a style={linkSyle} href="https://github.com/jeremyben-meir/" target = "_blank">- Github</a>
-        <a style={linkSyle} href = {Pdf} target = "_blank">- Resume</a>
-      </div>
-
-      <p style={subheaderSyle}>Contact</p>
-      <div style={contentStyle}>
-        <a>- Email: jsb459 "at" cornell "dot" edu</a>
-        <a>- Phone: 917 697 3521</a>
-      </div>
+      {Object.entries(sectioning).map((link, index) => ( subsection(link[0]) ))}
 
     </div>
   );
