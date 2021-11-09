@@ -6,11 +6,11 @@ import styles from '../src/assets/styles.js';
 function App() {
 
   const { height, width } = useWindowDimensions();
-  const marg = width > 1000 ? '50%' : "80%";
+  const marg = width > 1100 ? '50%' : "80%";
 
   const role = (name, link, pos) => (
     <div>
-    - <a style={styles.subtitleStyle} href={link} target = "_blank">{name}</a> {pos != null ? ":" : ""} {pos}
+      <li><a style={styles.subtitleStyle} href={link} target = "_blank">{name}</a> {pos != null ? ":" : ""} {pos}</li>
     </div>
   )
 
