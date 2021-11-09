@@ -16,7 +16,10 @@ function App() {
   var divStyle = {
     width:marg,
     margin:"auto",
-    textAlign: 'left'
+    textAlign: 'left',
+    marginTop: 30,
+    marginBottom: 30,
+    
   };
   var contentStyle = {
     display: "flex",
