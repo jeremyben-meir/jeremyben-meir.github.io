@@ -1,4 +1,4 @@
-import Pdf from '../../src/assets/Ben-Meir_Resume.pdf';
+import Pdf from '../../src/assets/Ben_Meir_Resume.pdf';
 
 export var bio = `Hi, I am Jeremy Ben-Meir, a fourth-year at Cornell University, majoring in Computer Science, 
 and minoring in Real Estate and Data Science. I am interested in machine learning, data science,
@@ -6,6 +6,13 @@ real estate investing, and blockchain applications.
 `
 
 export var sectioning = {
+    "Incoming Experience": [
+      {
+        "title": "Google",
+        "link": null,
+        "pos": "Software Engineer"
+      }
+    ],
     "Current Experience": [
       {
         "title": "Independent Real Estate Research",
@@ -43,17 +50,17 @@ export var sectioning = {
         "pos": null
       }
     ],
-    "Hobby Projects [links coming soon]": [
+    "Hobby Projects": [
         {
             "title": "Magazine Design",
-            "link": null,
+            "link": "https://issuu.com/jeremy.ben-meir",
             "pos": null
         },
-        {
-            "title": "CAD Experience",
-            "link": null,
-            "pos": null
-        },
+        // {
+        //     "title": "CAD Experience",
+        //     "link": null,
+        //     "pos": null
+        // },
     ],
     "Contact": [
       {
