@@ -15,7 +15,7 @@ export var sectioning = {
     ],
     "Current Experience": [
       {
-        "title": "Independent Real Estate Research",
+        "title": "Open Storefront Directory",
         "link": "https://jeremyben-meir.github.io/open-storefront-directory/",
         "pos": "Lead Data Scientist"
       }
