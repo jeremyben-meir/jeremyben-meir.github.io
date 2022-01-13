@@ -56,11 +56,11 @@ export var sectioning = {
             "link": "https://issuu.com/jeremy.ben-meir",
             "pos": null
         },
-        // {
-        //     "title": "CAD Experience",
-        //     "link": null,
-        //     "pos": null
-        // },
+        {
+            "title": "Word Puzzle",
+            "link": "https://jeremyben-meir.github.io/word-puzzle",
+            "pos": null
+        },
     ],
     "Contact": [
       {
