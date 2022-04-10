@@ -18,7 +18,12 @@ export var sectioning = {
         "title": "Open Storefront Directory",
         "link": "https://jeremyben-meir.github.io/open-storefront-directory/",
         "pos": "Lead Data Scientist"
-      }
+      },
+      {
+        "title": "Metaland",
+        "link": "https://jeremyben-meir.github.io/metaland-frontend/",
+        "pos": "Lead Developer"
+      },
     ],
     "Previous Experiences": [
       {
