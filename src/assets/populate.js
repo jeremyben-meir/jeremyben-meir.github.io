@@ -6,26 +6,27 @@ real estate investing, and blockchain applications.
 `
 
 export var sectioning = {
-    "Incoming Experience": [
+    // "Incoming Experience": [
+
+    // ],
+    "Current Experience": [
       {
         "title": "Google",
         "link": null,
-        "pos": "Software Engineer"
+        "pos": "Incoming Software Engineer"
       }
     ],
-    "Current Experience": [
+    "Previous Experiences": [
       {
         "title": "Open Storefront Directory",
         "link": "https://jeremyben-meir.github.io/open-storefront-directory/",
         "pos": "Lead Data Scientist"
       },
       {
-        "title": "Metaland",
+        "title": "Cornell Blockchain",
         "link": "https://jeremyben-meir.github.io/metaland-frontend/",
-        "pos": "Lead Developer"
+        "pos": "Research and Development Team Member"
       },
-    ],
-    "Previous Experiences": [
       {
         "title": "Amazon",
         "link": null,
