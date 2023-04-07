@@ -9,10 +9,11 @@ function App() {
   const marg = width > 1100 ? "50%" : "80%";
 
   const role = (name, link, pos) => (
-    <div>
-      <li>
+    <div style={styles.containerStyle}>
+      <div style={styles.bulletStyle}>•</div>
+      <div style={styles.contentStyle}>
         <a
-          style={styles.subtitleStyle}
+          style={{ fontWeight: "bold", textDecoration: "none" }}
           href={link}
           target="_blank"
           rel="noreferrer"
@@ -20,7 +21,7 @@ function App() {
           {name}
         </a>{" "}
         {pos != null ? ":" : ""} {pos}
-      </li>
+      </div>
     </div>
   );
 
