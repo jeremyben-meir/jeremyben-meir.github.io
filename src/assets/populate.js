@@ -1,6 +1,6 @@
 import Pdf from "../../src/assets/Ben_Meir_Resume.pdf";
 
-export var bio = `My name is Jeremy Ben-Meir, and I recently graduated from a Cornell University, where I earned a B.S. degree in Computer Science (with minors in Real Estate and Data Science). I am interested in machine learning, data science, real estate investing, and blockchain applications.`;
+export var bio = `My name is Jeremy Ben-Meir, and I recently graduated from a Cornell University, where I earned a B.S. degree in Computer Science (with minors in Real Estate and Data Science). I am interested in sustainable finance, machine learning, real estate investing, and blockchain applications.`;
 
 export var sectioning = {
   // "Incoming Experience": [
@@ -8,34 +8,34 @@ export var sectioning = {
   // ],
   "Current Experience": [
     {
-      title: "Google",
+      title: "Google (08/22-Present)",
       link: null,
       pos: "Software Engineer",
     },
   ],
   "Previous Experiences": [
     {
-      title: "Amazon",
-      link: null,
-      pos: "Software Development Engineer Intern",
-    },
-    {
-      title: "Cornell Blockchain",
+      title: "Cornell Blockchain (03/22-05/22)",
       link: "https://jeremyben-meir.github.io/metaland-frontend/",
       pos: "Research and Development Team Member",
     },
     {
-      title: "Open Storefront Directory",
+      title: "Amazon (06/21-08/21)",
+      link: null,
+      pos: "Software Development Engineer Intern",
+    },
+    {
+      title: "Open Storefront Directory (05/20-12/20)",
       link: "https://jeremyben-meir.github.io/open-storefront-directory/",
       pos: "Lead Data Scientist",
     },
     {
-      title: "Survision",
+      title: "Survision (10/19-04/19)",
       link: null,
       pos: "Application Developer",
     },
     {
-      title: "Cornell Robotic Personal Assistants Laboratory",
+      title: "Cornell Robotic Personal Assistants Laboratory (01/19-12/19)",
       link: null,
       pos: "Research Assistant",
     },
