@@ -1,23 +1,21 @@
-import Pdf from "../../src/assets/Ben_Meir_Resume.pdf";
+// import Pdf from "../../src/assets/Ben_Meir_Resume.pdf";
 
-export var bio = `My name is Jeremy Ben-Meir, and I recently graduated from a Cornell University, where I earned a B.S. degree in Computer Science (with minors in Real Estate and Data Science). I am interested in sustainable finance, machine learning, real estate investing, and blockchain applications.`;
+export var bio = `I love legal technology, real estate data science, poker, graphic design, guitar, and tennis.`;
 
 export var sectioning = {
   // "Incoming Experience": [
 
   // ],
-  "Current Experience": [
+  "Experience": [
     {
-      title: "Google (08/22-Present)",
+      title: "NewCo (09/21-Present)",
+      link: null,
+      pos: "Engineer",
+    },
+    {
+      title: "Google (08/22-09/23)",
       link: null,
       pos: "Software Engineer",
-    },
-  ],
-  "Previous Experiences": [
-    {
-      title: "Cornell Blockchain (03/22-05/22)",
-      link: "https://jeremyben-meir.github.io/metaland-frontend/",
-      pos: "Research and Development Team Member",
     },
     {
       title: "Amazon (06/21-08/21)",
@@ -29,15 +27,36 @@ export var sectioning = {
       link: "https://jeremyben-meir.github.io/open-storefront-directory/",
       pos: "Lead Data Scientist",
     },
+  ],
+  "Project": [
     {
-      title: "Survision (10/19-04/19)",
+      title: "SX Bet Market Maker (06/22-08/22)",
       link: null,
-      pos: "Application Developer",
+      pos: null,
+    },
+  ],
+  "Research and Activities": [
+    {
+      title: "Cornell Blockchain (03/22-05/22)",
+      link: "https://jeremyben-meir.github.io/metaland-frontend/",
+      pos: "Research and Development Team Member",
     },
     {
       title: "Cornell Robotic Personal Assistants Laboratory (01/19-12/19)",
       link: null,
       pos: "Research Assistant",
+    },
+  ],
+  "Education": [
+    {
+      title: "Cornell University College of Engineering (05/22)",
+      link: null,
+      pos: "BS in Computer Science, Minors in Real Estate and Data Science",
+    },
+    {
+      title: "Trinity School (06/18)",
+      link: null,
+      pos: "High School Diploma",
     },
   ],
   "Relevant Links": [
@@ -51,31 +70,21 @@ export var sectioning = {
       link: "https://github.com/jeremyben-meir/",
       pos: null,
     },
-    {
-      title: "Resume",
-      link: Pdf,
-      pos: null,
-    },
+    // {
+    //   title: "Resume",
+    //   link: Pdf,
+    //   pos: null,
+    // },
   ],
   "Hobby Projects": [
     {
-      title: "Magazine Design",
+      title: "Magazine design",
       link: "https://issuu.com/jeremy.ben-meir",
       pos: null,
     },
     {
-      title: "Word Puzzle",
-      link: "https://jeremyben-meir.github.io/word-puzzle",
-      pos: null,
-    },
-    {
-      title: "Artist Portfolio Website [Not Mobile Optimized]",
-      link: "https://samben-meir.com/",
-      pos: null,
-    },
-    {
-      title: "Home Portfolio Website [Incomplete]",
-      link: "https://www.stevenroseproperties.com/",
+      title: "Fintech website",
+      link: "https://www.withgreen.co/",
       pos: null,
     },
   ],
