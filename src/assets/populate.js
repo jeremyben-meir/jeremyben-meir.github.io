@@ -8,9 +8,9 @@ export var sectioning = {
   // ],
   "Experience": [
     {
-      title: "NewCo (09/23-Present)",
+      title: "PointOne (09/23-Present)",
       link: null,
-      pos: "Engineer",
+      pos: "Engineering",
     },
     {
       title: "Google (08/22-09/23)",
